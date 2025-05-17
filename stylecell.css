@@ -1,0 +1,110 @@
+/* stylecell.css */
+
+/* Reset geral para garantir consistência */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(Image_fx.jpg);
+  background-size: cover;
+  background-attachment: fixed; /* Para evitar que a imagem de fundo role */
+}
+
+.header-content {
+  width: 90%; /* Ocupar mais largura em telas menores */
+  height: auto; /* Altura automática para se ajustar ao conteúdo */
+  margin-top: 20px; /* Margem superior menor */
+  padding: 15px; /* Espaçamento interno menor */
+  border-radius: 10px;
+  flex-direction: column; /* Empilhar os itens (logo e navegação) */
+  align-items: center; /* Centralizar os itens horizontalmente */
+  text-align: center; /* Centralizar o texto dentro da div */
+}
+
+.header-content nav ul {
+  flex-direction: column; /* Empilhar os links de navegação */
+  gap: 15px; /* Espaçamento menor entre os links */
+  margin-top: 10px; /* Adicionar margem superior aos links */
+}
+
+.header-content nav ul li a {
+  font-size: 18px; /* Fonte um pouco menor */
+  padding: 10px 15px; /* Aumentar o padding para facilitar o toque */
+  border-radius: 5px;
+  /* Adicionar um fundo sutil para melhor legibilidade */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 90%; /* Ocupar mais largura */
+  height: auto; /* Altura automática */
+  margin-top: 20px;
+  flex-direction: column; /* Empilhar foto e informações */
+  align-items: center; /* Centralizar os itens */
+  gap: 20px; /* Espaçamento entre a foto e as informações */
+  padding: 20px; /* Adicionar padding interno */
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Adicionar um fundo sutil */
+}
+
+.foto img {
+  width: 150px; /* Foto menor */
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.3);
+  border: solid 1px #ff00ff5b;
+}
+
+.informacoes {
+  color: #fff;
+  padding: 20px; /* Reduzir o padding */
+  text-align: center; /* Centralizar o texto das informações */
+}
+
+.informacoes h1 {
+  font-size: 30px; /* Fonte menor para o título */
+  margin-bottom: 10px; /* Adicionar margem inferior */
+}
+
+.informacoes h2 {
+  font-size: 18px; /* Fonte menor para o subtítulo */
+  text-align: center; /* Centralizar o subtítulo */
+  margin-top: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center; /* Centralizar os ícones sociais */
+  gap: 15px; /* Espaçamento menor entre os ícones */
+  margin-top: 15px;
+}
+
+.social img {
+  width: 30px; /* Ícones sociais menores */
+  height: auto;
+}
+
+.sobremim {
+  font-size: 16px; /* Fonte menor para o texto sobre mim */
+  background-color: #121718a6;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px; /* Reduzir o padding */
+  width: 90%; /* Ocupar mais largura */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adicionar margem inferior */
+  text-align: center; /* Centralizar o texto sobre mim */
+}
+
+/* HOVERS - Podemos remover ou simplificar para mobile, já que não há mouse */
+.header-content a:hover,
+.foto:hover,
+.social a:hover {
+  transform: none; /* Remover efeitos de hover */
+  text-shadow: none;
+  transition: none;
+}
