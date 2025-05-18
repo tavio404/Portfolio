@@ -40,7 +40,7 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 4px rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -61,7 +61,7 @@ a {
 }
 
 .informacoes h1 {
-  font-size: 50px;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -86,7 +86,7 @@ a {
 }
 
 .sobremim {
-  font-size: 20px;
+  font-size: 1.3rem;
   background-color: #121718a6;
   border-radius: 15px;
   color: #fff;
