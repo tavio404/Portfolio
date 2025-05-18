@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: url(Image_fx.jpg);
   background-size: cover;
-  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .header-content {
@@ -61,7 +64,6 @@ a {
   font-size: 50px;
   display: flex;
   flex-direction: column;
-  
 }
 .informacoes h2 {
   margin-top: 20px;
@@ -73,8 +75,8 @@ a {
   width: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),
     inset 0 0 10px rgba(255, 255, 255, 0.5);
-    animation: balanco 3s linear infinite;
-    border: solid 1px #ff00ff5b;
+  animation: balanco 3s linear infinite;
+  border: solid 1px #ff00ff5b;
 }
 .social {
   display: flex;
@@ -99,25 +101,19 @@ a {
 
 .header-content a:hover {
   color: #fff;
-  text-shadow:
-    0 0 2px #fff,
-    0 0 5px #fff,
-    0 0 5px #fff,
-    0 0 10px #ff00ff,
-    0 0 15px #ff00ff,
-    0 0 20px #ff00ff;
-    transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #ff00ff,
+    0 0 15px #ff00ff, 0 0 20px #ff00ff;
+  transition: all 0.3s ease-in-out;
 }
 
 .foto:hover {
   transform: scale(1.1);
-  transition: all 0.5s ease-in-out ;
+  transition: all 0.5s ease-in-out;
 }
 
 .social a:hover {
   transform: scale(1.4);
   transition: all 0.3s ease-in-out;
-  
 }
 
 @keyframes balanco {
@@ -194,7 +190,6 @@ a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),
       inset 0 0 5px rgba(255, 255, 255, 0.3);
     border: solid 1px #ff00ff5b;
-    animation: none;
   }
 
   .informacoes {
@@ -245,9 +240,54 @@ a {
     text-shadow: none;
     transition: none;
   }
+}
 
-  @keyframes balanco {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(0, 0); }
-  }
+/* icons */
+
+.linguagens {
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.linguagens h2 {
+  margin-top: 40px;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    rgba(84, 10, 49, 0.453),
+    rgba(14, 10, 51, 0.453)
+  );
+  width: 85vw;
+  height: 12vh;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  text-shadow: 5px 5px 4px rgb(0, 0, 0);
+}
+
+.icons {
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  width: 85vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #121718a6;
+  border-radius: 30px;
+}
+.icons img {
+  width: 200px;
+  margin: 0 auto;
+}
+.icons img:hover{
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
